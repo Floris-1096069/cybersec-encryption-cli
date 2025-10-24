@@ -78,3 +78,6 @@ Fernet is secure because:
 This tool adheres to Kerckhoffs's Principle:
 - The algorithm (AES-128) and implementation (Fernet) are publicly known.
 - Security relies **only** on the secrecy of the key, not the obscurity of the system.
+
+<h3>Link to github repo:</h3>
+https://github.com/Floris-1096069/cybersec-encryption-cli
