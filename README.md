@@ -4,11 +4,13 @@ A simple CLI tool for generating AES-128 keys and encrypting and decrypting text
 This tool uses the cryptography library (Fernet) for AES-128 Encryption. 
 
 <h3>Dependencies:</h3>
+
 ``` pip install cryptography ```
 
 ``` pip install pyperclip ```
 
 <h3>Features</h3>
+
 - Generate Encryption Key: 
 
 ```python main.py --generate-key```
@@ -25,11 +27,14 @@ On key generation, the key is automatically copied to the clipboard.
 
 
 <h3>Encryption Method</h3>
+
 - **Algorithm:** AES-128 in CBC mode (via Fernet).
+    
 - **Why Fernet?**
   - Built-in integrity checking (HMAC).
   - Simple API for secure symmetric encryption.
   - Actively maintained and widely trusted.
+
 <details>
 
 ```Fernet.generate_key()``` generates a 256-bit key (32 bytes).
