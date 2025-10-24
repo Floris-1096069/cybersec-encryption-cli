@@ -12,17 +12,17 @@ The application uses the cryptography library (Fernet) for AES-128 Encryption.
 <h3>Features</h3>
 - Generate Encryption Key: 
 
-```main.py --generate-key```
+```python main.py --generate-key```
 
 On key generation, the key is automatically copied to the clipboard.
 
 - Encrypt a Message:
 
-```main.py --encrypt "[YOUR MESSAGE TO ENCRYPT]" --key "[YOUR ENCRYPTION KEY]"```
+```python main.py --encrypt "[YOUR MESSAGE TO ENCRYPT]" --key "[YOUR ENCRYPTION KEY]"```
 
 - Decrypt a Message:
 
-```main.py --decrypt "[YOUR ENCRYPTED MESSAGE]" --key "[YOUR ENCRYPTION KEY]"```
+```python main.py --decrypt "[YOUR ENCRYPTED MESSAGE]" --key "[YOUR ENCRYPTION KEY]"```
 
 
 <h3>Encryption Method</h3>
@@ -35,6 +35,7 @@ On key generation, the key is automatically copied to the clipboard.
 <h3>Key Management</h3>
 - **Generation:** Random 128-bit key using `Fernet.generate_key()`.
 - **Storage:** Keys are **not stored** by the application. Users must securely store and share keys themselves.
+- I actively chose to keep Key storage in the hands of the user. To keep the application both flexible for multiple usecases and keep the application as simple as possible. As I enjoy optimizing code.
 - **Security Implications:**
   - If the key is lost, encrypted data is unrecoverable.
   - Keys must be shared securely (e.g., encrypted channels, in-person).
