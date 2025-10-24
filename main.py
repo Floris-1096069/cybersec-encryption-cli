@@ -9,12 +9,15 @@ parser.add_argument("--key", metavar="KEY", help="Key for Encryption/Decryption.
 parser.add_argument("--generate-key", action="store_true", help="Generate a new key.")
 
 args = parser.parse_args()
+
 if args.generate_key:
     key = generate_key().decode()
     pyperclip.copy(key)
     print("New key:", key)
     print("Key copied to clipboard")
+
 elif args.encrypt and args.key:
     print("Encrypted:", encrypt(args.encrypt, args.key.encode()))
+
 elif args.decrypt and args.key:
-    print("Decrypted:", decrypt(args.decrypt.encode, args.key.encode()))
+    print("Decrypted:", decrypt(args.decrypt.encode(), args.key.encode()))

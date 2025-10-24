@@ -9,4 +9,4 @@ def encrypt(message, key):
 
 def decrypt(message, key):
     f = Fernet(key)
-    return f.decrypt(message.decode())
+    return f.decrypt(message).decode()
