@@ -65,9 +65,13 @@ Fernet is secure because:
 </details>
 
 <h3>Key Management</h3>
+
 - **Generation:** Random 128-bit key using `Fernet.generate_key()`.
+
 - **Storage:** Keys are **not stored** by the application. Users must securely store and share keys themselves.
+
   - I actively chose to keep Key storage in the hands of the user. To keep the tool both flexible for multiple usecases and keep the tool as simple as possible.
+  
 - **Security Implications:**
   - If the key is lost, encrypted data is unrecoverable.
   - Keys must be shared securely (e.g., encrypted channels, in-person).
