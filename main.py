@@ -17,7 +17,7 @@ if args.generate_key:
     print("Key copied to clipboard")
 
 elif args.encrypt and args.key:
-    print("Encrypted:", encrypt(args.encrypt, args.key.encode()))
+    print("Encrypted message:", encrypt(args.encrypt, args.key.encode()))
 
 elif args.decrypt and args.key:
-    print("Decrypted:", decrypt(args.decrypt.encode(), args.key.encode()))
+    print("Decrypted message:", decrypt(args.decrypt.encode(), args.key.encode()))
