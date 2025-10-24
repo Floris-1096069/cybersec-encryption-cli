@@ -1,7 +1,7 @@
 import argparse
 from encrypt import generate_key, encrypt, decrypt
 
-parser = argparse.ArgumentParser(description='Encrypt or decrypt a message with AES-256')
+parser = argparse.ArgumentParser(description='Encrypt or decrypt a message with AES-128')
 parser.add_argument("--encrypt", metavar="TEKST", help="Text to Encrypt.")
 parser.add_argument("--decrypt", metavar="VERSLEUTELD", help="Text to Decrypt.")
 parser.add_argument("--key", metavar="SLEUTEL", help="Key for Encryption/Decryption.")
