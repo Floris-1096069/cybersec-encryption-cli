@@ -3,10 +3,10 @@ import pyperclip
 from encrypt import generate_key, encrypt, decrypt
 
 parser = argparse.ArgumentParser(description='Encrypt or decrypt a message with AES-128')
-parser.add_argument("--encrypt", metavar="TEXT", help="Text to Encrypt.")
-parser.add_argument("--decrypt", metavar="ENCRYPTED", help="Text to Decrypt.")
-parser.add_argument("--key", metavar="KEY", help="Key for Encryption/Decryption.")
-parser.add_argument("--generate-key", action="store_true", help="Generate a new key.")
+parser.add_argument("--encrypt", metavar="TEXT", help='python main.py --encrypt "[YOUR MESSAGE TO ENCRYPT]" --key "[YOUR ENCRYPTION KEY]"')
+parser.add_argument("--decrypt", metavar="ENCRYPTED", help='python main.py --decrypt "[YOUR ENCRYPTED MESSAGE]" --key "[YOUR ENCRYPTION KEY]"')
+parser.add_argument("--key", metavar="KEY", help="Key argument for Encryption/Decryption.")
+parser.add_argument("--generate-key", action="store_true", help="Generate a new key and copy to clipboard")
 
 args = parser.parse_args()
 

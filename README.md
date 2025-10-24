@@ -11,6 +11,10 @@ This tool uses the cryptography library (Fernet) for AES-128 Encryption.
 
 <h3>Features</h3>
 
+- Help command:
+
+```python main.py --help```
+
 - Generate Encryption Key: 
 
 ```python main.py --generate-key```
