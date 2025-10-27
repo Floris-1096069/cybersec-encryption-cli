@@ -79,7 +79,9 @@ Fernet is secure because:
   - On the upside, keys can be kept completely analogue. Including an option to share keys by pigeon post.
 
 <h3>Kerckhoff's Principle</h3>
+
 This tool adheres to Kerckhoffs's Principle:
+
 - The algorithm (AES-128) and implementation (Fernet) are publicly known.
 - Security relies **only** on the secrecy of the key, not the obscurity of the system.
 
