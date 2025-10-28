@@ -81,9 +81,12 @@ Fernet is secure because:
   - Keys must be shared securely (e.g., encrypted channels, in-person).
   - If keys aren't shared trough a secure channel, through email for example, messages can be compromised by a third party.
   - On the upside, keys can be kept completely analogue. Including an option to share keys by pigeon post.
+  - This tool has been designed to be as lightweight as possible, so as many people as possible that need secure communication can make use of this tool.
 
 <h3>Kerckhoff's Principle</h3>
+
 This tool adheres to Kerckhoffs's Principle:
+
 - The algorithm (AES-128) and implementation (Fernet) are publicly known.
 - Security relies **only** on the secrecy of the key, not the obscurity of the system.
 
