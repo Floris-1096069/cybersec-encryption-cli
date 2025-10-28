@@ -1,4 +1,4 @@
-# Cybersecurity Symetric Encryption Tool
+# Cybersecurity Symetric Encryption Tool - dmcrypt
 A simple CLI tool for generating AES-128 keys and encrypting and decrypting text, using symmetric encryption.
 
 This tool uses the cryptography library (Fernet) for AES-128 Encryption. 
