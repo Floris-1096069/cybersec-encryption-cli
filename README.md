@@ -5,7 +5,7 @@ This tool uses the cryptography library (Fernet) for AES-128 Encryption.
 
 <h3>Installation</h3>
 
-- Place both dmcrypt.py and encrypt.py on the path variable, after installing dependencies, then it can be accesed from CMD.
+- Place install python 3.13, install dependencies and place dmcrypt.py on PATH, then it can be accesed from CMD.
 
 <h3>Dependencies:</h3>
 
