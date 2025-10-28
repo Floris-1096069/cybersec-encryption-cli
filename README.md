@@ -3,6 +3,10 @@ A simple CLI tool for generating AES-128 keys and encrypting and decrypting text
 
 This tool uses the cryptography library (Fernet) for AES-128 Encryption. 
 
+<h3>Installation</h3>
+
+- Place both dmcrypt.py and encrypt.py on the path variable, after installing dependencies, then it can be accesed from CMD.
+
 <h3>Dependencies:</h3>
 
 ``` pip install cryptography ```
@@ -13,21 +17,21 @@ This tool uses the cryptography library (Fernet) for AES-128 Encryption.
 
 - Help command:
 
-```python main.py --help```
+```python dmcrypt.py --help```
 
 - Generate Encryption Key: 
 
-```python main.py --generate-key```
+```python dmcrypt.py --generate-key```
 
 On key generation, the key is automatically copied to the clipboard.
 
 - Encrypt a Message:
 
-```python main.py --encrypt "[YOUR MESSAGE TO ENCRYPT]" --key "[YOUR ENCRYPTION KEY]"```
+```python dmcrypt.py --encrypt "[YOUR MESSAGE TO ENCRYPT]" --key "[YOUR ENCRYPTION KEY]"```
 
 - Decrypt a Message:
 
-```python main.py --decrypt "[YOUR ENCRYPTED MESSAGE]" --key "[YOUR ENCRYPTION KEY]"```
+```python dmcrypt.py --decrypt "[YOUR ENCRYPTED MESSAGE]" --key "[YOUR ENCRYPTION KEY]"```
 
 
 <h3>Encryption Method</h3>
