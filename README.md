@@ -6,6 +6,7 @@ This tool uses the cryptography library (Fernet) for AES-128 Encryption.
 <h3>Installation</h3>
 
 - Place install python 3.13, install dependencies and place dmcrypt.py on PATH, then it can be accesed from CMD.
+- Or run from venv, using same commands in venv terminal.
 
 <h3>Dependencies:</h3>
 
